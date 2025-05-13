@@ -76,7 +76,8 @@ with tabs[0]:
 
     cols = st.columns(len(images))
     for col, img_path in zip(cols, images):
-        col.image(img_path, use_column_width=True, caption=os.path.basename(img_path))
+        col.image(img_path, use_container_width=True, caption=os.path.basename(img_path))
+
 
 # --- Model Evaluation ---
 with tabs[1]:
