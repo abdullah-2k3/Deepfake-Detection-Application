@@ -1,15 +1,26 @@
 # Core Libraries
-numpy==1.24.3
-pillow==9.5.0
+numpy>=1.26.0  # Upgraded from 1.24.3 for compatibility
+pandas>=1.5.0
+matplotlib>=3.7.1
+scikit-learn>=1.3.0
 
-# Plotting
-matplotlib
+# Deep Learning & TensorFlow
 tensorflow>=2.15.0
-seaborn==0.12.2
-
-# Machine Learning
-scikit-learn==1.2.2
-protobuf==3.20.3
+keras>=2.15.0
 
 # Streamlit App
-streamlit==1.25.0
+streamlit>=1.29.0
+
+# Image & Video Processing
+opencv-python>=4.8.0.74
+Pillow>=9.5.0
+
+# File Handling & Utilities
+tqdm>=4.65.0
+protobuf<=3.20.1  # Required for newer TensorFlow compatibility
+
+# Optional: For improved logging/error output
+rich>=10.14.0
+
+# Avoid broken setuptools versions with Python 3.12
+setuptools<64.0.0
