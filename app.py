@@ -17,10 +17,15 @@ st.title("Deepfake Image Classifier")
 model = load_cnn_model()
 
 # Dataset directory
-MAIN = "./Dataset"
-train_dir = os.path.join(MAIN, "Train")
-val_dir = os.path.join(MAIN, "Validation")
-test_dir = os.path.join(MAIN, "Test")
+# MAIN = "./Dataset"
+# train_dir = os.path.join(MAIN, "Train")
+# val_dir = os.path.join(MAIN, "Validation")
+# test_dir = os.path.join(MAIN, "Test")
+DATASET_PATH = "./Trimmed Dataset"
+train_dir = os.path.join(DATASET_PATH, "Train")
+val_dir = os.path.join(DATASET_PATH, "Validation")
+test_dir = os.path.join(DATASET_PATH, "Test")
+
 
 # Data pipeline
 def get_dataset(dir_path):
@@ -40,10 +45,6 @@ train_count = count_images_in_dir(train_dir)
 val_count = count_images_in_dir(val_dir)
 test_count = count_images_in_dir(test_dir)
 
-DATASET_PATH = "./Trimmed Dataset"
-train_dir = os.path.join(DATASET_PATH, "Train")
-val_dir = os.path.join(DATASET_PATH, "Validation")
-test_dir = os.path.join(DATASET_PATH, "Test")
 
 # Cached datasets
 @st.cache_resource

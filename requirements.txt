@@ -1,0 +1,15 @@
+# Core Python libraries
+numpy
+Pillow
+
+# Plotting
+matplotlib
+seaborn
+
+# Machine Learning
+scikit-learn
+tensorflow
+
+# Web App
+streamlit
+
