@@ -1,15 +1,15 @@
-# Core Python libraries
-numpy
-Pillow
+# Core Libraries
+numpy==1.24.3
+pillow==9.5.0
 
 # Plotting
-matplotlib
-seaborn
+matplotlib==3.7.1
+seaborn==0.12.2
 
 # Machine Learning
-scikit-learn
-tensorflow
+scikit-learn==1.2.2
+tensorflow==2.12.0
+protobuf==3.20.3
 
-# Web App
-streamlit
-
+# Streamlit App
+streamlit==1.25.0
